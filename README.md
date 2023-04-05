@@ -21,4 +21,9 @@ Para executar o código principal, basta rodar o arquivo main.py:
 3. README.md: arquivo com instruções de utilização do código.
 
 ## IMPORTANTE
+
+O arquivo requirements.txt é uma lista de pacotes Python necessários para a execução do código. Ele contém informações sobre as dependências do projeto, especificando as versões dos pacotes a serem instalados.
+
+Para utilizá-lo, basta acessar o diretório do projeto e executar o comando "pip install -r requirements.txt". Dessa forma, o pip irá instalar automaticamente todas as dependências necessárias para a execução do código.
+
 Lembre de entrar dentro de "pymongo" para rodar o projeto, o diretório deve estar direcionando a pasta do venv.
