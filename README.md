@@ -19,3 +19,6 @@ Para executar o código principal, basta rodar o arquivo main.py:
 1. main.py: código principal que insere as vendas no MongoDB.
 2. app.py: código que cria a API com o FastAPI.
 3. README.md: arquivo com instruções de utilização do código.
+
+## IMPORTANTE
+Lembre de entrar dentro de "pymongo" para rodar o projeto, o diretório deve estar direcionando a pasta do venv.
