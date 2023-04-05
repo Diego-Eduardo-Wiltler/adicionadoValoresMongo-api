@@ -223,5 +223,5 @@ async def get_lista_produtos():
     return {"lista_produtos": lista_produtos}
 
 @app.get("/lista_nomes")
-def get_nomes():
+async def get_nomes():
     return {"lista_nomes": lista_nomes}
