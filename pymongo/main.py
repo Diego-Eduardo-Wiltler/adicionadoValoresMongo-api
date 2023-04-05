@@ -17,13 +17,14 @@ coluna = db['vendas']
 
 data_aleatoria = pd.date_range(start="2000-01-01", end=datetime.today()).to_list()
 
-response_nomes = requests.get(f"http://{app.host}:{app.port}/lista_nomes")
-lista_nomes = response_nomes.json()["lista_nomes"]
-
-response_produtos = requests.get(f"http://{app.host}:{app.port}/lista_produtos")
-lista_produtos = response_produtos.json()["lista_produtos"]
 
 for _ in tqdm(range(1_000_000)):
+    response_nomes = requests.get(f"http://{app.host}:{app.port}/lista_nomes")
+    lista_nomes = response_nomes.json()["lista_nomes"]
+
+    response_produtos = requests.get(f"http://{app.host}:{app.port}/lista_produtos")
+    lista_produtos = response_produtos.json()["lista_produtos"]
+    
     dicio = {
         'cod_venda': random.randint(1, 5000),
         'data_teste': str(random.choice(data_aleatoria)),
